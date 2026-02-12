@@ -6,6 +6,138 @@
     <title>Mi primer html</title>
 </head>
 <body>
+    <header>
+        <h1>Fundamentos de HTML</h1>
+        <p>HTML es el lenguaje marcado para crear paginas we</p>
+
+        <nav>
+            <ul>
+                <li><a href="#anatomia">Elementos</a></li>
+                <li><a href="#contenido">Contenido</a></li>
+                <li><a href="#Semantica">Semantica</a></li>
+                <li><a href="#Contenedores">div vs span</a></li>
+                <li><a href="#Formularios">Formularios</a></li>
+                <li><a href="#Practicas">Buenas practicas</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="anatomia">
+            <h2>Anatomia de elemento HTML</h2>
+
+            <p>Un elemento HTML consta de una etiqueta de apertura, contenido y una etiqueta de cierre. Po rejemplo</p>
+
+            <strong>
+                <pre><code>&lt;h1&gt;Título principal&lt;/h1&gt;</code></pre>
+            </strong>
+            <p>En este caso, <strong><code>&lt;h1&gt;</code></strong> es la etiqueta de apertura, "Título principal" es el contenido y <code>&lt;/h1&gt;</code> es la etiqueta de cierre.</p>
+
+            <div class="tip">
+                Los atributos proporcionan información extra.
+                Ejemplo: <strong>class="nota"</strong>
+            </div>
+            <hr>
+        </section>
+
+        <section id="contenido">
+            <h2>Contenido en HTML</h2>
+            <p>El contenido en HTML puede ser texto, imágenes, enlaces, listas, tablas y otros elementos multimedia. Es importante estructurar el contenido de manera clara y organizada para mejorar la legibilidad y la experiencia del usuario.</p>
+            <h3>Enlaces</h3>
+            <a href="https://www.google.com">Esto es un enlace externo</a>
+            <br>
+            <a href="#anatomia">Esto es un enlace interno</a>
+            <br>
+            <a href="otro.html">Este es un enlace a otro html que esta en la misma carpeta</a>
+            <br>
+            <a href="otro.html#mexico">Este es un enlace a una seccion en otro html en la misma carpeta</a>
+
+            <h3>Imagen accesible</h3>
+            <img src="./img/img.png" alt="Imagen de flecha" width="200">
+            <h3>Listas</h3>
+            <ol>
+                <li>Primer elemento</li>
+                <li>Segundo elemento</li>
+                <li>Tercer elemento</li>
+            </ol>
+            <ul>
+                <li>Elemento A</li>
+                <li>Elemento B</li>
+                <li>Elemento C</li>
+            </ul>
+        </section>
+        <hr>
+
+        <section id="#Semantica">
+            <h2>HTML Semántico</h2>
+            <p>El HTML semántico utiliza etiquetas que describen claramente su significado y función en el documento. Esto mejora la accesibilidad, la SEO y la mantenibilidad del código.</p>
+            <h3>Ejemplos de etiquetas semánticas</h3>
+            <ul>
+                <li><code>&lt;header&gt;</code>: Define el encabezado de una sección o página.</li>
+                <li><code>&lt;nav&gt;</code>: Define un bloque de navegación.</li>
+                <li><code>&lt;main&gt;</code>: Define el contenido principal del documento.</li>
+                <li><code>&lt;article&gt;</code>: Define un artículo independiente.</li>
+                <li><code>&lt;section&gt;</code>: Define una sección genérica del documento.</li>
+                <li><code>&lt;footer&gt;</code>: Define el pie de página de una sección o página.</li>
+            </ul>
+            <div class="tip">
+                No uses div para todo, elige la etiqueta adecuada, recuerda que el HTML semántico mejora la accesibilidad y SEO.
+            </div>
+
+        </section>
+        <hr>
+
+        <section id="#Contenedores">
+            <h2>Contenedores: div vs span</h2>
+            <p><code>&lt;div&gt;</code> es un contenedor de bloque que se utiliza para agrupar elementos y aplicar estilos o scripts a un bloque completo, es decir, ocupa todo el ancho disponible. Por ejemplo:</p>
+            <div class="example_div"><pre><code>&lt;div class="caja"&gt;</code></pre></div>
+            <p><code>&lt;span&gt;</code> es un contenedor en línea que se utiliza para agrupar elementos de texto y aplicar estilos o scripts a un fragmento específico, es decir, no ocupa todo el ancho disponible solamente lo que ocupe el elemento . Por ejemplo:</p>
+            <span style="color:blueviolet;font-weight:bold;"><pre><code>&lt;span class="resaltado"&gt;Texto resaltado&lt;/span&gt;</code></pre></span>
+            
+        </section>
+        <hr>
+
+        <section id="#Formularios">
+            <h2>Formularios en HTML</h2>
+            <p>Los formularios en HTML se utilizan para recopilar información del usuario. Un formulario típico incluye campos de entrada, botones de envío y etiquetas para describir cada campo. Por ejemplo:</p>
+            <form>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <br><br>
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+                <br><br>
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" name="password" required>
+                <br><br>
+                <label for="birthdate">Fecha de nacimiento:</label>
+                <input type="date" id="birthdate" name="birthdate">
+                <br><br>
+                <label>
+                <input type="checkbox" required>
+                Acepto términos
+                </label>
+                <br><br>
+                <button>Enviar</button>
+            </form>
+        </section>
+        <hr>
+
+        <section id="#Practicas">
+            <h2>Buenas prácticas en HTML</h2>
+            <ul>
+                <li>Usar etiquetas semánticas para mejorar la accesibilidad y SEO.</li>
+                <li>Incluir atributos alt en las imágenes para describir su contenido.</li>
+                <li>Organizar el contenido de manera clara y estructurada.</li>
+                <li>Evitar el uso excesivo de divs y spans, usar etiquetas adecuadas.</li>
+                <li>Validar el código HTML para asegurar su correcto funcionamiento.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Mi sitio web. Todos los derechos reservados.</p>
+    </footer>
+
     
 </body>
 </html>
